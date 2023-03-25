@@ -1,11 +1,12 @@
 import React from 'react'
 type BlurContainerProps = {
-    children: React.ReactNode | JSX.Element;
+    children: React.ReactNode
+    className?: string
 }
 
 const BlurContainer = (props:BlurContainerProps) => {
   return (
-    <div className='w-full border-4 rounded-3xl backdrop-blur-xl text-white bg-white/20 p-5 border-black'>
+    <div className={`w-full h-fit rounded-3xl text-white bg-white/20 p-5 ${props.className} `}>
         {props.children}
     </div>
   )
