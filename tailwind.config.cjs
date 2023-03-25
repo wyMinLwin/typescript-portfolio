@@ -11,6 +11,7 @@ module.exports = {
         'comic-sky': '#4c94f6	',
         'comic-yellow': '#F6DB35',
         'comic-orange': '#ffc510',
+        'comic-black' : ' #110F11',
         'comic-red': '#EE5454',
       }
     },
