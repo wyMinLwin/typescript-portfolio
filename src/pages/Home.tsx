@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/About'
+import ModelContainer from '../components/ModelContainer'
 import Profile from '../components/Profile'
 import RecentWork from '../components/RecentWork'
 import Setting from '../components/Setting'
@@ -15,15 +16,19 @@ const Home = () => {
                 <Welcome />
                 <Skill />
                 <About />
+                <div className='hidden md:block lg:hidden'><RecentWork /></div>
                 </div>
                 <div className='flex flex-col gap-2'>
                 <Setting />
                 <Profile />
-                <RecentWork />
+                <div className=' md:hidden lg:block 2xl:hidden'><RecentWork /></div>
                 </div>
+                
+            </div>
+            <div className='hidden 2xl:grid grid-cols-1 gap-2 mt-2'>
+                  <RecentWork />
             </div>
         </div>
-        
     </>
   )
 }

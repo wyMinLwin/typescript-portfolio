@@ -8,40 +8,40 @@ const Skill = () => {
   return (
     <BlurContainer className='grid grid-cols-2 sm:grid-cols-3 gap-5'>
       <SkillTextAndIcon label={'html'}>
-        <SiHtml5 color='#fff' size={26} />
+        <SiHtml5 size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'css'}>
-        <SiCss3 color='#fff' size={26} />
+        <SiCss3 size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'bootstrap'}>
-        <SiBootstrap color='#fff' size={26} />
+        <SiBootstrap size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'tailwind'}>
-        <SiTailwindcss color='#fff' size={26} />
+        <SiTailwindcss size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'sass'}>
-        <SiSass color='#fff' size={26} />
+        <SiSass size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'javascript'}>
-        <SiJavascript color='#fff' size={26} />
+        <SiJavascript size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'typescript'}>
-        <SiTypescript color='#fff' size={26} />
+        <SiTypescript size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'react'}>
-        <SiReact color='#fff' size={26} />
+        <SiReact size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'react native'}>
-        <FaMobileAlt color='#fff' size={26} />
+        <FaMobileAlt size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'redux'}>
-        <SiRedux color='#fff' size={26} />
+        <SiRedux size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'ubuntu Os'}>
-        <SiUbuntu color='#fff' size={26} />
+        <SiUbuntu size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
       <SkillTextAndIcon label={'github'}>
-        <SiGithub color='#fff' size={26} />
+        <SiGithub size={26} className='text-white hover:text-comic-red transition ease-in-out' />
       </SkillTextAndIcon>
     </BlurContainer>
   )

@@ -14,22 +14,22 @@ const Profile = () => {
       <BlurContainer>
         <div className='flex flex-row justify-between items-center'>
           <div className='font-light text-lg'>Name:</div>
-          <div className='font-semibold text-lg'>Wai Yan Min Lwin</div>
+          <div className='font-semibold text-lg text-white hover:text-comic-red transition ease-in-out'>Wai Yan Min Lwin</div>
         </div>
       </BlurContainer>
       <BlurContainer>
         <div className='flex flex-row justify-evenly'>
           <a href='https://www.facebook.com/waiyan.minlwin.161/'>
-          <SiFacebook size={30} />
+          <SiFacebook size={30} className='text-white hover:text-comic-red transition ease-in-out' />
           </a>
           <a href='https://www.instagram.com/wymin_lwin/'>
-          <SiInstagram size={30} />
+          <SiInstagram size={30} className='text-white hover:text-comic-red transition ease-in-out' />
           </a>
           <a href='https://github.com/wyMinLwin/'>
-          <SiGithub size={30} />
+          <SiGithub size={30} className='text-white hover:text-comic-red transition ease-in-out' />
           </a>
           <a href='https:\\www.t.me/@wyMin_Lwin'>
-          <SiTelegram size={30} />
+          <SiTelegram size={30} className='text-white hover:text-comic-red transition ease-in-out' />
           </a>
         </div>
       </BlurContainer>
@@ -41,7 +41,7 @@ const Profile = () => {
           <BlurContainer className='h-full'>
             <div className='flex flex-row justify-between items-center'>
               <div className='font-light text-lg'>Location:</div>
-              <div className='font-semibold text-lg'>Yangon, Myanmar</div>   
+              <div className='font-semibold text-lg text-white hover:text-comic-red transition ease-in-out'>Yangon, Myanmar</div>   
            </div>
            <img className='w-full pt-8' src={YGN} alt='yangon' />
           </BlurContainer>
