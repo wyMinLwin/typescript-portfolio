@@ -6,7 +6,7 @@ export type modelActionsType =
     | {type: 'close', payload: boolean};
 
 type ModelType = {
-    model: false,
+    model: boolean,
     dispatchModel: React.Dispatch<modelActionsType>
 };
 type ModalContextProps = {
@@ -15,18 +15,18 @@ type ModalContextProps = {
 
 
 const initialModel:boolean = false;
-const modelReducer = (state: typeof initialModel,action: modelActionsType) => {
+const modelReducer = (state: boolean ,action: modelActionsType) => {
     switch(action.type) {
         case 'open' :
-            return state = action.payload
+            return !state
         case 'close' : 
-            return false
+            return !state
         default : throw new Error();
     }
 }
 
 
-const ModalContextProvider = createContext<ModelType>(null!);
+export const ModalContextProvider = createContext<ModelType>(null!);
 
 const ModalContext = (props:ModalContextProps) => {
     const [model,dispatchModel] = useReducer(modelReducer,initialModel);

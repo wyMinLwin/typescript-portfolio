@@ -10,9 +10,9 @@ import { FaFacebookSquare } from 'react-icons/fa'
 const Profile = () => {
   return (
     <>
-    <div className='grid lg:grid-cols-2 gap-2'>
+    <div className='grid lg:grid-cols-2 gap-2' onClick={() => console.log('-----')}>
       <BlurContainer>
-        <div className='flex flex-row justify-between items-center'>
+        <div className='flex flex-row justify-between items-center' >
           <div className='font-light text-lg'>Name:</div>
           <div className='font-semibold text-lg text-white hover:text-comic-red transition ease-in-out'>Wai Yan Min Lwin</div>
         </div>
