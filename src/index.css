@@ -1,12 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 @media (min-width: 640px) {
     
 ::-webkit-scrollbar {
     display: none;
 }
+}
+.openPopup {
+    transition: all 100ms;
+    animation: openModel 100ms linear;
+}
+.closePopup {
+    transition: all 100ms;
+    animation: closeModel 100ms linear;
+}
+
+@keyframes openModel {
+    
+    0% {scale: 75%;}
+    /* 50% {scale: 50%;} */
+    100% {scale: 100%;}
+}
+
+@keyframes closeModel {
+    
+    0% {scale: 100%;}
+    100% {scale: 75%;}
+    /* 50% {scale: 50%;} */
 }

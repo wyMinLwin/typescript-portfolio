@@ -4,7 +4,7 @@ import { IoSettingsSharp } from 'react-icons/io5'
 
 const Setting = () => {
   return (
-    <BlurContainer>
+    <BlurContainer notClickable={true} >
         <div className='flex flex-row justify-between items-center'>
             <div className='font-light text-lg'>Setting</div>
             <IoSettingsSharp size={24} />

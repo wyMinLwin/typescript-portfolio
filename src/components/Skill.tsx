@@ -1,49 +1,24 @@
-import React from 'react'
-import {FaMobileAlt } from 'react-icons/fa'
-import {SiBootstrap, SiCss3, SiGithub, SiHtml5, SiJavascript, SiReact, SiRedux, SiSass, SiTailwindcss, SiTypescript, SiUbuntu} from 'react-icons/si'
+import React, { useState } from 'react'
 import BlurContainer from './BlurContainer'
-import SkillTextAndIcon from './SkillTextAndIcon'
+import ModelOverlay from './ModelOverlay'
+import SkillsContainer from './SkillsContainer'
 
 const Skill = () => {
+  const [skillsModel,setSkillsModel] = useState(false)
   return (
-    <BlurContainer className='grid grid-cols-2 sm:grid-cols-3 gap-5'>
-      <SkillTextAndIcon label={'html'}>
-        <SiHtml5 size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'css'}>
-        <SiCss3 size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'bootstrap'}>
-        <SiBootstrap size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'tailwind'}>
-        <SiTailwindcss size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'sass'}>
-        <SiSass size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'javascript'}>
-        <SiJavascript size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'typescript'}>
-        <SiTypescript size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'react'}>
-        <SiReact size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'react native'}>
-        <FaMobileAlt size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'redux'}>
-        <SiRedux size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'ubuntu Os'}>
-        <SiUbuntu size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-      <SkillTextAndIcon label={'github'}>
-        <SiGithub size={26} className='text-white hover:text-comic-red transition ease-in-out' />
-      </SkillTextAndIcon>
-    </BlurContainer>
+    <>
+      <BlurContainer className='grid grid-cols-2 sm:grid-cols-3 gap-5' setOpenModel={() => setSkillsModel(prev => prev = true)}>
+        <SkillsContainer />
+      </BlurContainer>
+      <ModelOverlay openModal={skillsModel} setOpenModel={() => setSkillsModel(prev => prev = false)} >
+        <div className='grid grid-cols-1'>
+          <div className='flex flex-row flex-wrap '><SkillsContainer /></div>
+        </div>
+        <p className='text-center p-1 font-semibold text-lg'>Those are my skill sets till 28 Mar 2023.</p>
+        <p className='text-center p-1 font-semibold text-lg'>I can also use various of libraries really will.</p>
+        <p className='text-center p-1 font-semibold text-lg'>And also good at prompting.</p>
+      </ModelOverlay>
+    </>
   )
 }
 
