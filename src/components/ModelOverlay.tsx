@@ -31,7 +31,7 @@ const ModelOverlay = (props:ModelOverlayProps) => {
                             props.setOpenModel()
                             setCurrentAnimation(prev => prev = '')
                           },50)
-                        }} className='absolute right-3 top-3 z-30 text-comic-red'>
+                        }} className='absolute text-xl right-3 top-3 z-30 text-comic-red'>
                             <BsDashCircleFill />
                         </div>
                         <BlurContainer notClickable={true} >

@@ -1,6 +1,6 @@
 import React from 'react'
 import BlurContainer from './BlurContainer'
-import Resume from '../assets/r.pdf'
+import Resume from '../assets/resume.pdf'
 const About = () => {
   return (
     <BlurContainer notClickable={true}>
